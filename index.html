@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tribute Fotbal — Gheorghe Hagi</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gheorghe Hagi — Regele Fotbalului Românesc</h1>
+    </header>
+
+    <section aria-labelledby="hagi-img-title">
+      <h2 id="hagi-img-title">Imagine</h2>
+      <img
+        src="https://alchetron.com/cdn/gheorghe-hagi-290bb7e1-6f65-4121-9d7d-6d6de22e57d-resize-750.jpeg"
+        alt="Gheorghe Hagi la echipa națională a României"
+        width="100"
+      />
+    </section>
+
+    <section aria-labelledby="about-hagi">
+      <h2 id="about-hagi">Despre Gheorghe Hagi</h2>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Data nașterii</th>
+            <th>Naționalitate</th>
+            <th>Poziție</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5 februarie 1965</td>
+            <td>România</td>
+            <td>Mijlocaș ofensiv</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Gheorghe Hagi, supranumit <strong>Regele</strong>, este considerat cel
+        mai mare fotbalist român din toate timpurile. A încântat o lume întreagă
+        prin tehnică, viteză, viziune și execuții spectaculoase, fiind
+        recunoscut pe plan internațional ca unul dintre cei mai buni mijlocași
+        ofensivi ai generației sale.
+      </p>
+
+      <p>Hagi a jucat la cluburi de top precum:</p>
+
+      <ul>
+        <li>Steaua București</li>
+        <li>Real Madrid</li>
+        <li>FC Barcelona</li>
+        <li>Galatasaray</li>
+      </ul>
+
+      <p>
+        Sub tricoul naționalei României, Hagi a fost liderul Generației de Aur,
+        reprezentându-ne la 3 Campionate Mondiale și 3 Campionate Europene.
+      </p>
+
+      <p>
+        Pentru mai multe informații despre Gheorghe Hagi, poți vizita:
+        <a
+          href="https://ro.wikipedia.org/wiki/Gheorghe_Hagi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gheorghe Hagi — Wikipedia
+        </a>
+      </p>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="survey-title">
+      <h2 id="survey-title">Chestionar: Ce părere ai despre Gheorghe Hagi?</h2>
+
+      <form action="thankyou.html" method="GET">
+        <div>
+          <label for="name">Numele tău:</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+        <br />
+
+        <div>
+          <label for="pass">Parolă (test):</label><br />
+          <input type="password" id="pass" name="pass" />
+        </div>
+        <br />
+
+        <div>
+          <label for="rating">Cât de bun crezi că este Hagi?</label><br />
+          <select id="rating" name="rating">
+            <option value="king">Regele (cel mai bun român vreodată)</option>
+            <option value="legend">Legendă</option>
+            <option value="veryGood">Foarte bun</option>
+            <option value="good">Bun</option>
+          </select>
+        </div>
+        <br />
+
+        <fieldset>
+          <legend>Ce îți place cel mai mult la Hagi?</legend>
+          <input
+            type="checkbox"
+            id="dribbling"
+            name="skills[]"
+            value="dribbling"
+          />
+          <label for="dribbling">Driblingul</label><br />
+
+          <input type="checkbox" id="shots" name="skills[]" value="shooting" />
+          <label for="shots">Șuturile de la distanță</label><br />
+
+          <input type="checkbox" id="vision" name="skills[]" value="vision" />
+          <label for="vision">Viziunea de joc</label><br />
+
+          <input
+            type="checkbox"
+            id="leadership"
+            name="skills[]"
+            value="leadership"
+          />
+          <label for="leadership">Liderul din teren</label>
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>La ce club crezi că a evoluat cel mai bine?</legend>
+
+          <input type="radio" id="steaua" name="club" value="Steaua" checked />
+          <label for="steaua">Steaua București</label><br />
+
+          <input type="radio" id="galata" name="club" value="Galatasaray" />
+          <label for="galata">Galatasaray</label><br />
+
+          <input type="radio" id="real" name="club" value="Real Madrid" />
+          <label for="real">Real Madrid</label><br />
+
+          <input type="radio" id="barca" name="club" value="Barcelona" />
+          <label for="barca">FC Barcelona</label><br />
+        </fieldset>
+        <br />
+
+        <div>
+          <label for="comments">Comentarii:</label><br />
+          <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+        </div>
+        <br />
+
+        <div>
+          <button type="submit">Trimite formularul</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
